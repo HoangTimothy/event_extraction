@@ -391,13 +391,13 @@ def main():
     n_articles = step_1_convert_to_jsonl(INPUT_PATH, ARTICLES_JSONL, LINES_PER_ARTICLE, GROUP_MODE)
     print(f"  Wrote {n_articles} articles")
 
-    print(f"[Step 2] Segmenting articles with word segmentation -> {SEGMENTS_JSONL} (SEGMENTER={SEGMENTER})")
-    n_segments = step_2_segment_articles(ARTICLES_JSONL, SEGMENTS_JSONL)
-    print(f"  Wrote {n_segments} segments")
+    # print(f"[Step 2] Segmenting articles with word segmentation -> {SEGMENTS_JSONL} (SEGMENTER={SEGMENTER})")
+    # n_segments = step_2_segment_articles(ARTICLES_JSONL, SEGMENTS_JSONL)
+    # print(f"  Wrote {n_segments} segments")
 
-    print(f"[Step 3] Splitting word-segmented sentences -> {SENTENCES_JSONL}")
-    n_sents = step_3_sentence_split(SEGMENTS_JSONL, SENTENCES_JSONL)
-    print(f"  Wrote {n_sents} sentences")
+    # print(f"[Step 3] Splitting word-segmented sentences -> {SENTENCES_JSONL}")
+    # n_sents = step_3_sentence_split(SEGMENTS_JSONL, SENTENCES_JSONL)
+    # print(f"  Wrote {n_sents} sentences")
 
 
 if __name__ == "__main__":
