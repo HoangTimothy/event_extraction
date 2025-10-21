@@ -10,7 +10,7 @@ from typing import Iterator, List, Dict, Any, Optional
 # =============================
 
 # Input file path
-INPUT_PATH = os.environ.get("INPUT_PATH", "test_sample.csv")
+INPUT_PATH = os.environ.get("INPUT_PATH", "dataset.csv")
 
 # Grouping: "http" (default, start by http/https) or "fixed" (N lines/article)
 GROUP_MODE = os.environ.get("GROUP_MODE", "http").lower()
